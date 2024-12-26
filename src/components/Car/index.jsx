@@ -7,7 +7,7 @@ function Car(props) {
         <div className={carStyles.carsList}>
             {
                 cars.length > 0 && cars.map((car, index) => {
-                   return <div key={index}>{car}</div>
+                   return <div className={carStyles.carsItem} key={index}>{car}</div>
                 })
             }
         </div>

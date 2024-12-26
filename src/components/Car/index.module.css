@@ -3,4 +3,29 @@
     align-items: center;
     justify-content: start;
     gap: 10px;
+    background-color: aqua;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 100px;
+}
+
+.carsItem {
+    position: relative;
+    padding-left: 15px;
+}
+
+.carsItem::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 30%;
+    left: 0;
 }

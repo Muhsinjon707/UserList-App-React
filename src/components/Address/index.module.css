@@ -1,9 +1,48 @@
 .cardAddress {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: orangered;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    gap: 10px;
 }
 
-.cardRegion {font-style: italic;}
+.cardRegion {
+    font-style: italic;
+    padding-left: 20px;
+    width: 100%;
+    position: relative;
+}
 
-.regionZipCode {font-weight: 600;}
+.cardRegion::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.regionZipCode {
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+
+.regionZipCode::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
