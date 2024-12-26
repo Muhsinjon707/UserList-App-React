@@ -1,0 +1,9 @@
+.cardAddress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardRegion {font-style: italic;}
+
+.regionZipCode {font-weight: 600;}
